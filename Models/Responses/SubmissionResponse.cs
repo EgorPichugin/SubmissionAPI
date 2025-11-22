@@ -5,7 +5,7 @@ namespace SubmissionAPI.Models.Responses;
 
 public record SubmissionResponse(
     Guid Id,
-    string Title,
-    string Type,
-    JsonElement Fields
+    string FormName,
+    DateTime CreatedAt,
+    JsonElement Data
 );
