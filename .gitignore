@@ -1,0 +1,23 @@
+# Build folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Temp
+*.tmp
+*.temp
+
+# Publish artifacts
+publish/
