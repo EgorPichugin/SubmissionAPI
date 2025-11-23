@@ -23,4 +23,11 @@ public class SubmissionsController(IMediator mediator) : ControllerBase
         var result = await mediator.Send(new GetAllSubmissionsRequest());
         return Ok(result);
     }
+    
+    [HttpDelete("{id:guid}")]
+    public async Task<IActionResult> Delete(Guid id)
+    {
+        await mediator.Send(new DeleteSubmissionRequest(id));
+        return NoContent();
+    }
 }
