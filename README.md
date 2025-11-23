@@ -25,10 +25,10 @@ Docker is running on port 8080. You can access swagger on `http:localhost:8080/s
 
 1) Pull docker image
 ```bash
-docker pull egorpichugin/submission-api
+docker pull egorpichugin/submission-api:latest
 ```
 
 2) Run docker
 ```bash
-docker run -e ASPNETCORE_ENVIRONMENT=Development -p 8080:8080 submission-api
+docker run -e ASPNETCORE_ENVIRONMENT=Development -p 8080:8080 egorpichugin/submission-api:latest
 ```
